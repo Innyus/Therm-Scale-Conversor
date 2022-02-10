@@ -1,0 +1,32 @@
+Celsius = 'Celsius' or 'celsius'
+Farenheit = 'Farenheit' or 'farenheit'
+Kelvin = 'Kelvin' or 'kelvin'
+
+Tipo_De_Escala = input('Which Therm Scale do you want to convert? ')
+
+if Tipo_De_Escala == Celsius:
+    Escolha = input('Do you want to convert celsius to: ')
+    if Escolha == Farenheit:
+        Valor = input('Which Value do you want to be converted from Celsius to Farenheit? ')
+        print(float(Valor)*1.8+32)
+    if Escolha == Kelvin:
+        Valor2 = input('Which Value do you want to be converted from Celsius to Kelvin? ')
+        print(float(Valor2) + 273)
+
+if Tipo_De_Escala == Farenheit:
+    Escolha2 = input('Do you want to convert Farenheit to: ')
+    if Escolha2 == Celsius:
+        Valor3 = input('Which Value do you want to be converted from Farenheit to Celsius? ')
+        print((float(Valor3) - 32) / 1.8)
+    if Escolha2 == Kelvin:
+        Valor4 = input('Which value do you want to be converted from Farenheit to Kelvin? ')
+        print((float(Valor4) - 32) * 0.555555556 + 273)
+
+if Tipo_De_Escala == Kelvin:
+    Escolha3 = input('Which value do you want to convert Kelvin to: ')
+    if Escolha3 == Farenheit:
+        Valor5 = input('Which value do you want to be converted from Kelvin to Farenheit: ')
+        print((float(Valor5) - 273) * 1.8 + 32)
+    if Escolha3 == Celsius:
+        Valor6 = input('Which value do you want to be converted from Kelvin to Celsius: ')
+        print((float(Valor6) - 273))
